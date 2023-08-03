@@ -36,10 +36,6 @@ test:
     - jupyter labextension list
     - jupyter labextension list 1>labextensions 2>&1
     - grep -iE "@jupyterlab/github.*OK.*jupyterlab_github" labextensions
-    # tests nbclassic machinery
-    - jupyter serverextension list
-    - jupyter serverextension list 1>serverextensions 2>&1
-    - grep -iE "jupyterlab_github.*OK" serverextensions
     # tests jupyter_server machinery
     - jupyter server extension list
     - jupyter server extension list 1>server_extensions 2>&1
