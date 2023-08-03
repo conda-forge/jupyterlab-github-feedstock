@@ -1,11 +1,11 @@
-About jupyterlab-github
-=======================
+About jupyterlab-github-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-github-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyterlab/jupyterlab-github
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-github-feedstock/blob/main/LICENSE.txt)
 
 Summary: JupyterLab viewer for GitHub repositories
 
@@ -144,7 +144,4 @@ Feedstock Maintainers
 =====================
 
 * [@bollwyvl](https://github.com/bollwyvl/)
-
-
-<!-- dummy commit to enable rerendering -->
 
