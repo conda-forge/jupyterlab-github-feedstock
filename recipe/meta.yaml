@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: jupyterlab-github
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/j/jupyterlab-github/jupyterlab_github-{{ version }}.tar.gz
-    sha256: 6da497b310777a3d82515d6a2691ba6f25677934160b051c250797bc56a8da9b
+    sha256: fab84e981684753f35bc5b55f8e84a30ffbe5b642d7b2d2721e4a048896afa54
   - url: https://raw.githubusercontent.com/jupyterlab/jupyterlab-github/v{{ version }}/jupyter-config/jupyter_notebook_config.d/jupyterlab_github.json
     sha256: 22d0ffaeaf44f8a2997de327204a8bd4c8c3c168a904336d21a3ff8feb9d5707
 
