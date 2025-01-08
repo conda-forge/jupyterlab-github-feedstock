@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/j/jupyterlab-github/jupyterlab_github-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/j/jupyterlab-github/jupyterlab_github-{{ version }}.tar.gz
   sha256: fab84e981684753f35bc5b55f8e84a30ffbe5b642d7b2d2721e4a048896afa54
  
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -20,10 +20,10 @@ requirements:
     - hatch-nodejs-version
     - jupyterlab >=4.0.0,<5
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - jupyterlab >=4.0.0,<5
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -31,6 +31,7 @@ test:
   requires:
     - pip
     - m2-grep  # [win]
+    - python {{ python_min }}
   commands:
     - pip check
     - jupyter labextension list
